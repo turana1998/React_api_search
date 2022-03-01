@@ -1,0 +1,25 @@
+:root {
+  font-size: 14px;
+}
+body{
+  background-color: #f4faff;
+}
+table{
+  display: block;
+  max-width: 100%;
+  overflow: scroll;
+}
+.tr,
+th {
+  padding: 1rem;
+  color: #42c7fd;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.search svg{
+  margin-left: -30px;
+}
+.table-striped>tbody>tr:nth-of-type(odd){
+  background-color: #f4faff;
+}
