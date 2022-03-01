@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { ArrowRight, Search } from 'react-bootstrap-icons';
+import {Search } from 'react-bootstrap-icons';
 
 import Datatable from '../datatable';
 import './styles.css';
@@ -10,7 +10,7 @@ require('isomorphic-fetch');
 export default function App() {
   const [data, setData] = useState([]);
   const [q, setQ] = useState('');
-  const [searchColumns, setSearchColumns] = useState([
+  const [searchColumns] = useState([
     'name',
     'birth_year',
   ]);
@@ -33,7 +33,6 @@ export default function App() {
     );
   }
 
-  const columns = data[0] && Object.keys(data[0]);
   return (
     <div className='container mt-5'>
       <div className='mb-5 d-flex align-items-center search w-auto'>
